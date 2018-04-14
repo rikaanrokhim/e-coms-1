@@ -34,7 +34,7 @@ error_reporting(E_ALL);
                 <td><?=$dt["nama"]?></td>
                 <td><?=$dt["harga"]?></td>
                 <td><?=$dt["stok"]?> </td>
-                <td><?=$dt["id_pen"] ?></td>
+                <td><?=$dt["penjual"] ?></td>
                 <td><img src="../images/<?=$dt["foto"]?>" height="50" width="50"></td>
                 <td><a href="?hal=dtbarang&id_barang=<?=$dt['id_barang']?> "> Detail </a> </td>
                 <td><a href="?hal=sbarang&aksi=hapus&id_barang=<?=$dt['id_barang']?> "> Hapus </a> </td>

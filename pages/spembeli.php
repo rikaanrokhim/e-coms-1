@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 	if ($aksi=="add") {
 		$post = $odb->sant(INPUT_POST);
 		extract($post);
-		$odb->insert("tb_pelanggan", "'','$user', '$pass', '$email', '$alamat', '$k_pos', '$telp', '$status' ");
+		$odb->insert("tb_pelanggan", "null,'$user', '$pass', '$email', '$alamat', '$k_pos', '$telp', '$status' ");
 		$ff->alert("Data Berhasil Disimpan");
 		$ff->redirect("admin.php?hal=dpembeli");
 	}

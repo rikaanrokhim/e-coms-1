@@ -13,8 +13,8 @@ error_reporting(E_ALL);
 		<form method="post" action="sberita.php?aksi=edit&id_berita=<?=$id?>" class="form-container" enctype="multipart/form-data">
 			<div class="form-title"> Judul</div>
 			<input type="text" name="judul" class="form-field" value="<?=$dt1['judul']?>">
-			<div class="form-title"> Head</div>
-			<input type="text" name="head" class="form-field" value="<?=$dt1['head'] ?>">
+		<!-- 	<div class="form-title"> Head</div>
+			<input type="text" name="head" class="form-field" value="<?=$dt1['head'] ?>"> -->
 			<div class="form-title"> Isi berita </div>
 			<textarea name="isi_ber" class="form-field" value="<?=$dt1['isi_ber']?>" >
 				<?=$dt1['isi_ber'] ?>
@@ -23,14 +23,14 @@ error_reporting(E_ALL);
 			<textarea name="at" class="form-field" value="<?=$dt1['at']?>">
 				<?=$dt1['at'] ?>
 			</textarea>
-			<div class="form-title"> Tanggal</div>
-			<input name="tanggal" class="form-field" type="date" value="<?=$dt1['tanggal']?>">
+			<!-- <div class="form-title"> Tanggal</div>
+			<input name="tanggal" class="form-field" type="date" value="<?=$dt1['tanggal']?>"> -->
 			<div class="submit-container">
 				<input type="submit" name="btnsimpan" class="submit-button" value="Simpan">
 			</div>
 
 		</form>
-		<form method="post" action="sberita.php?aksi=ganti&id_berita=<?=$id?>" class="form-container">
+		<form method="post" action="sberita.php?aksi=ganti&id_berita=<?=$id?>" class="form-container" enctype="multipart/form-data">
 			<div class="form-title"> Foto
 				<img src="../images/<?=$dt1['foto']?>" height="50" width="50" >
 			</div>

@@ -13,7 +13,7 @@ error_reporting(E_ALL);
         $status= "1";
         $tanggal = date("Y-m-d");
         if ($sukses!="") {
-            $odb->insert("tb_barang", "'', '$nama', '$id_pen', '$id_kat', '$harga', '$stok', '$deskripsi', '$tags', '$status', '$sukses', '$tanggal', '$ukuran1', '$ukuran2', '$ukuran3', '$ukuran4' ");
+            $odb->insert("tb_barang", "null, '$nama', '$id_pen', '$id_kat', '$harga', '$stok', '$deskripsi', '$tags', '$status', '$sukses', '$tanggal', '$ukuran1', '$ukuran2', '$ukuran3', '$ukuran4' ");
             $ff->alert("Data Berhasil Disimpan");
             $ff->redirect("admin.php?hal=dbarang");
         } else {

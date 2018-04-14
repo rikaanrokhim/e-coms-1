@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 	if ($aksi=="add") {
 		$post = $odb->sant(INPUT_POST);
 		extract($post);
-		$odb->insert("tb_penjual", "'', '$penjual', '$telp', '$ket', '$alamat' ");
+		$odb->insert("tb_penjual", "null, '$penjual', '$telp', '$ket', '$alamat' ");
 		$ff->alert("Data berhasil disimpan");
 		$ff->redirect("admin.php?hal=dpenjual");
 	}

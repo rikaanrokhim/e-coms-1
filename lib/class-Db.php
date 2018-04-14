@@ -1,11 +1,13 @@
 <?php
  class Db{
-    var $db;
+    var $db=null;
     public function __construct()
     {
         try {
-            $this->db=new PDO("mysql:host=localhost;dbname=dbpos2","root","aaaa");
+            $this->db=new PDO("mysql:host=localhost;dbname=dbpos","root","1234");
             $this->db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+
         } catch (PDOException $e) {
             die("Connection Error :".$e->getMessage());
         }
@@ -39,6 +41,9 @@
 
         $query=$this->db->prepare("delete from $t");
         $query->execute();
+    }
+    function last() {
+        return $this->db->lastInsertId();
     }
     function nur($q){
 

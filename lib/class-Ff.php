@@ -10,11 +10,11 @@ class Fungsi{
 		return isset($_SESSION["$p"])?$_SESSION["$p"]:"$a";
 	}
 	function rp($duit){
-		return "RP ".number_format($duit);
+		return "Rp. ".number_format($duit);
 	}
 	function alert($a){
 		echo "<script>alert('$a')</script>";
-	}	
+	}
 	function redirect($a){
 		echo "<script>location.href='$a'</script>";
 	}

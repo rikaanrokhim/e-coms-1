@@ -1,0 +1,227 @@
+body{
+	font-family : Corbel;
+	margin : 0px;
+	padding : 0px;
+}
+
+.wrapper {
+	min-height : 100%;
+	position : static;
+	overflow : hidden;
+}
+
+.header2 {
+	background : #2a2a2a;
+	width : 100%;
+	height : 50px;
+	z-index : 5;
+	position : fixed;
+	margin-top : 50px;
+	box-shadow : 0px 0px 5px rgba(0,0,0,1);
+	color : #fff;
+	border-bottom : 5px solid #83c92b;
+}
+
+.header1 {
+	width : 100%;
+	height : 50px;
+	background : #f0f0f0;
+	z-index : 5;
+	position : fixed;
+}
+
+.batas {
+	width : 90%;
+	margin : auto;
+}
+
+.menu_link {
+	background : none;
+	padding :  15px;
+	float : left;
+	font-size : 17px;
+	text-decoration : none;
+	color: #FFF;
+}
+
+.menu_link:hover {
+	background : #83c92b;
+	-webkit-transition : all ease 0.5s;
+	-moz-transition : all ease 0.5s;
+}
+
+.cari {
+	background : #fff;
+	padding : 5px;
+	float : right;
+	width : 280px;
+	border : #CCC 1px solid;
+	margin-top : 10px;
+}
+
+.textcari {
+	border : none;
+	outline : none;
+	width : 250px;
+}
+
+.tombol_car {
+	background : url(img/cari.png);
+	border : none;
+}
+
+.masuk {
+	background : #83c92b;
+	padding : 10px;
+	font-size : 16px;
+	float : right;
+	color : #fff;
+	margin : 5px;
+	text-decoration :none;
+	border : 1px solid transparent;
+}
+
+.masuk:hover {
+	background : #fff;
+	border : 1px solid #000;
+	color : #000;
+	-webkit-transition : all ease 0.5s;
+	-moz-transition : all ease 0.5s;
+}
+
+#men {
+	height : 100px;
+	width : 100%;
+}
+
+h2 {
+	font-size : 24px;
+	border-bottom : #83c92b 5px solid;
+}
+
+.tombol {
+	background : #83c92b;
+	padding : 10px;
+	margin : 5px;
+	font-size : 16px;
+	border : none;
+	text-decoration : none;
+	color : #fff;
+}
+
+.tombol:hover {
+	background : #339771;
+	-webkit-transition : all ease 0.5s;
+	-moz-transition : all ease 0.5s;
+}
+
+.text {
+	border : #CCC 1px solid;
+	width : 200px;
+	padding : 5px;
+
+}
+
+.textarea {
+	border : #CCC 1px solid;
+	width : 350px;
+	height : 100px;
+	padding : 5px;
+}
+
+.link {
+	color : #646464;
+	text-decoration : none;
+}
+
+.link:hover {
+	text-decoration : underline;
+	color : #000;
+}
+
+.kanan {
+	float : right;
+	width : 150px;
+}
+
+.kanan a {
+	text-decoration : none;
+}
+
+.kat {
+	float : left;
+	width : 20%;
+}
+
+.kat h3 {
+	width : 90%;
+	padding : 3%;
+	background : #83c92b;
+	font-size : 20px;
+	color : #fff;
+	text-align : center;
+	margin : 0px;
+	margin-top : 20px;
+	border-bottom : 5px solid #3D9C25;
+}
+
+.kat h4 {
+	width : 90%;
+	padding : 3%;
+	background : #E1E1E1;
+	font-size : 18px;
+	color : #000;
+	margin : 0px;
+	text-align : center;
+	margin-bottom : 3px;
+}
+
+.kat h4:hover {
+	background : #a6a6a6;
+}
+
+.kat a {
+	text-decoration :none;
+}
+
+#footer {
+	background : #2a2a2a;
+	width : 100%;
+	color : #FFF;
+	float : left;
+	height : 30px;
+	padding-top : 20px;
+	padding-bottom : 20px;
+}
+
+.barang {
+	width : 150px;
+	height : 280px;
+	padding : 20px;
+	margin : 5px;
+	background : #E1E1E1;
+	display : inline-block;
+}
+
+.barang:hover {
+	background : #a6a6a6;
+	-webkit-transition : all ease 0.5s;
+	-moz-transition : all ease 0.5s;
+}
+
+.content-wrapper {
+	width : 75%;
+	float : right;
+}
+
+.p {
+	background : #333;
+	color : #FFF;
+	text-decoration : none;
+	padding : 10px;
+	margin : 5px;
+}
+
+.p:hover {
+	background : #666;
+}

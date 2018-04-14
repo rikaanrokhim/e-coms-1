@@ -1,18 +1,22 @@
 <?php
 ini_set("display_errors", "1");
 error_reporting(E_ALL);
-
+	session_start();
 	include_once "../lib/cart.php";
 	include_once "../lib/class-Db.php";
 	include_once "../lib/class-Ff.php";
 
-	session_start();
+	
 
-	$user = isset($_SESSION['user']) ?$_SESSION['user']:"";
-	if ($user == "1") {
-		$ff->alert("Username Tidak Ditemukan! Silahkan Login Dulu!");
-		$ff->redirect("../index.php");
+	if (!isset($_SESSION['user'])) {
+		$ff->redirect('login.php');
 	}
+
+	// $user = isset($_SESSION['user']) ?$_SESSION['user']:"";
+	// if ($user == "1") {
+	// 	$ff->alert("Username Tidak Ditemukan! Silahkan Login Dulu!");
+	// 	$ff->redirect("../index.php");
+	// }
 ?>
 
 <head>

@@ -1,0 +1,26 @@
+body {
+    font-family: Corbel;
+    margin: 0px;
+    padding: 0px;
+    font-size: 140px;
+    background:
+}
+
+.container {
+
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.gambar {
+    width : 250px;
+    height: 250px;
+    margin: left;
+    display: block;
+}
+
+.des {
+    margin: right;
+
+}

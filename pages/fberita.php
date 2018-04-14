@@ -4,12 +4,12 @@
 		<form method="post" action="sberita.php?aksi=add" class="form-container" enctype="multipart/form-data">
 			<div class="form-title"> Judul</div>
 			<input type="text" name="judul" class="form-field" value="">
-			<div class="form-title"> Head</div>
-			<input type="text" name="head" class="form-field" value="">
+			<!-- <div class="form-title"> Head</div>
+			<input type="text" name="head" class="form-field" value=""> -->
 			<div class="form-title"> Isi Berita</div>
 			<textarea name="isi_ber" class="form-field" value=""></textarea>
-			<div class="form-title"> Tanggal</div>
-			<input class="form-field" name="tanggal" type="date" value="">
+			<!-- <div class="form-title"> Tanggal</div>
+			<input class="form-field" name="tanggal" type="date" value=""> -->
 			<div class="form-title"> Tempat</div>
 			<textarea name="at" class="form-field" value=""></textarea>
 			<div class="form-title"> Foto</div>

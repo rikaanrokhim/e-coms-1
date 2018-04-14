@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 	if ($aksi=="add") {
 		$post=$odb->sant(INPUT_POST);
 		extract($post);
-		$odb->insert("tb_admin", "'', '$user', '$pass', '$email' ");
+		$odb->insert("tb_admin", "null, '$user', '$pass', '$email' ");
 		$ff->alert("Data Berhasil Disimpan");
 		$ff->redirect("admin.php?hal=dadmin");
 	}

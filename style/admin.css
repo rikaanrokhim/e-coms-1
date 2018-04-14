@@ -109,7 +109,7 @@ div#container {
 
 #nav li ul {
 	overflow: hidden;
-	/*display: none; // used to hidesub-menus*/ 
+	/*display: none; // used to hidesub-menus*/
 }
 
 .content {
@@ -121,7 +121,7 @@ div#container {
 	transition: margin-left .5s;
 }
 
-.conotent p {
+.content p {
 	color: #424242;
 	font-size: 0.8em;
 }
@@ -282,7 +282,7 @@ tr:nth-child(even) {
 	background: -webkit-linear-gradient(top, #8dc059, #6aa436);
 	background: -moz-linear-gradient(top, #8dc059, #6aa436);
 	background: -o-linear-gradient(top, #8dc059, #6aa436);
-	background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);  
+	background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
 	color: #fff;
 }
 .submit-button:active {
@@ -293,7 +293,7 @@ tr:nth-child(even) {
 	background: -webkit-linear-gradient(top, #8dc059, #6aa436);
 	background: -moz-linear-gradient(top, #8dc059, #6aa436);
 	background: -o-linear-gradient(top, #8dc059, #6aa436);
-	background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);  
+	background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
 	color: #fff;
 }
 .pagination {

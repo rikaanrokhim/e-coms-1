@@ -5,7 +5,7 @@
 			<div class="form-title"> Nama</div>
 			<input type="text" name="nama" class="form-field" value="">
 			<div class="form-title"> Url</div>
-			<input type="text" name="url" class="form-field" value="">
+			<input type="url" name="url" class="form-field" value="">
 			<div class="form-title"> Foto </div>
 			<input type="file" name="foto" class="form-field" value="">
 			<div class="submit-container">

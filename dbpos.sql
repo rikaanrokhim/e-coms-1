@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Nov 05, 2017 at 09:05 AM
--- Server version: 5.7.20-0ubuntu0.16.04.1
--- PHP Version: 7.0.22-0ubuntu0.16.04.1
+-- Host: 127.0.0.1
+-- Generation Time: Feb 13, 2018 at 06:03 AM
+-- Server version: 10.1.30-MariaDB
+-- PHP Version: 5.6.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -69,9 +71,9 @@ CREATE TABLE `tb_barang` (
 --
 
 INSERT INTO `tb_barang` (`id_barang`, `nama`, `id_pen`, `id_kat`, `harga`, `stok`, `deskripsi`, `tags`, `status`, `foto`, `tanggal`, `ukuran1`, `ukuran2`, `ukuran3`, `ukuran4`) VALUES
-(9, 'DRESS TUNIC', 2, 26, 90000, 3, 'Set Tunic atasan LD 100, pnjang 90', 'baju', '1', 'BR_20171027023144.jpg', '2017-10-27', 'L', 'M', 'XXL', 'XL'),
-(12, 'Flatshoes', 0, 27, 90000, 4, '                untuk ukuran dewasa            ', 'sepatu ', '1', 'BR_20171029070125.jpg', '2017-10-29', '34 ', '35 ', '36 ', '37 '),
-(13, 'baju', 2, 1, 40000, 4, 'baju', 'baju', 'member', '', '2017-11-03', 'l', 'l', 'l', 'l');
+(14, 'a', 1, 20, 20000, 2, 'ew', 'w', '1', 'BR_20180202045817.jpg', '2018-02-02', 'l', 'l', 'l', 'l'),
+(15, 'dress', 1, 20, 50000, 3, 'berat 1 kg', 'gg', '1', 'BR_20180209054153.jpg', '2018-02-09', 'l', 'l', 'l', 'l'),
+(16, 'sepatu', 2, 27, 50000, 6, 'sepatu anak', '', '1', 'BR_20180209073156.jpg', '2018-02-09', '34', '35', '36', '37');
 
 -- --------------------------------------------------------
 
@@ -87,6 +89,13 @@ CREATE TABLE `tb_barang_c` (
   `tanggal` date NOT NULL,
   `status` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_barang_c`
+--
+
+INSERT INTO `tb_barang_c` (`id_com`, `id_berita`, `id_cust`, `isi_pesan`, `tanggal`, `status`) VALUES
+(1, 8, 7, 'bajunya murah', '2018-02-09', '');
 
 -- --------------------------------------------------------
 
@@ -223,7 +232,8 @@ CREATE TABLE `tb_penjual` (
 --
 
 INSERT INTO `tb_penjual` (`id_pen`, `penjual`, `telp`, `ket`, `alamat`) VALUES
-(1, 'sari', '098765432', 'jual online', 'sby');
+(1, 'sari', '098765432', 'jual online', 'sby'),
+(2, 'Sasa', '0896743567', 'jual online', 'MOJOKERTO\r\n');
 
 -- --------------------------------------------------------
 
@@ -364,66 +374,80 @@ ALTER TABLE `tb_trans_det`
 --
 ALTER TABLE `tb_admin`
   MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `tb_barang`
 --
 ALTER TABLE `tb_barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
 --
 -- AUTO_INCREMENT for table `tb_barang_c`
 --
 ALTER TABLE `tb_barang_c`
-  MODIFY `id_com` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_com` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `tb_berita`
 --
 ALTER TABLE `tb_berita`
   MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
 --
 -- AUTO_INCREMENT for table `tb_berita_c`
 --
 ALTER TABLE `tb_berita_c`
   MODIFY `id_com` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `tb_iklan`
 --
 ALTER TABLE `tb_iklan`
   MODIFY `id_iklan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `tb_kategori`
 --
 ALTER TABLE `tb_kategori`
   MODIFY `id_kat` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+
 --
 -- AUTO_INCREMENT for table `tb_pelanggan`
 --
 ALTER TABLE `tb_pelanggan`
   MODIFY `id_cust` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
 -- AUTO_INCREMENT for table `tb_pemesanan`
 --
 ALTER TABLE `tb_pemesanan`
   MODIFY `id_pm` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `tb_penjual`
 --
 ALTER TABLE `tb_penjual`
-  MODIFY `id_pen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_pen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT for table `tb_pesan`
 --
 ALTER TABLE `tb_pesan`
   MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `tb_trans`
 --
 ALTER TABLE `tb_trans`
   MODIFY `id_trans` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `tb_trans_det`
 --
 ALTER TABLE `tb_trans_det`
   MODIFY `id_trans_det` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

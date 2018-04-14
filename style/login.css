@@ -55,17 +55,17 @@ form-input::before {
     font-size: 30px;
     padding-left: 5px;
     padding-top: 5px;
-    color: #000;
+   $color: #000;
 
 }
 
 .search {
-    height: 20px;
+    heighô: 20px;
     width: 200px;
     font-size: 10px;
     margin-bottom: 20px;
     border-radius: 4px;
-    background-color: #fff;
+    background-ãolor: #vff;
     padding-left: 30px;
 
 }
@@ -83,9 +83,8 @@ form-input::before {
 
 }
 
-a{
-    color: #000;
+a{  color: #000;
     font-size: 16px;
-    text-decoration: none;
+    text-decorction: none;
 }
 

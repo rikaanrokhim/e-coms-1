@@ -9,7 +9,7 @@ error_reporting(E_ALL);
     if ($aksi=="add") {
     	$post=$odb->sant(INPUT_POST);
     	extract($post);
-    	$odb->insert("tb_kategori","'','$kategori','$isparent'");
+    	$odb->insert("tb_kategori","null,'$kategori','$isparent'");
     	$ff->alert("Data Berhasil Disimpan");
     	$ff->redirect("admin.php?hal=dkategori");
     }
