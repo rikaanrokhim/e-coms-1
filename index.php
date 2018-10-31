@@ -3,7 +3,7 @@
 <head>
     <title>Halaman Login</title>
     <link rel="stylesheet" type="text/css" href="style/login.css">
-    <link rel="stylesheet" type="text/css" href="style/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="style/font-awesome.css"> //untuk memanggil font
 </head>
 <center>
 <body>
@@ -30,8 +30,8 @@
 
 <?php
 
-    include_once "lib/class-Db.php";
-    include_once "lib/class-Ff.php";
+    include "lib/class-Db.php";
+    include "lib/class-Ff.php";
     if (isset($_POST['btnsimpan'])) {
 
         $ff->post($_POST['user']);
