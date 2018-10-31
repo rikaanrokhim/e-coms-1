@@ -34,3 +34,13 @@ body {
     top: calc(-100px/2);
     left: calc(50% - 50px)
 }
+
+.ap{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px)
+}
