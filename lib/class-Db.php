@@ -1,9 +1,9 @@
 <?php
  class Db{
-    var $db=null;
-    public function __construct()
+    var $db=null; //deklarasi public $db . var => modifier sbg public 
+    public function __construct() // construc sbg dasar. otomatis kepanggil 
     {
-        try {
+        try { // konsepnya (try,cacth) ketikan salah satu error, maka yang lain masih bisa jalan . error handling
             $this->db=new PDO("mysql:host=localhost;dbname=dbpos","root","1234");
             $this->db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
