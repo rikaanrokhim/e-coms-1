@@ -17,7 +17,7 @@
         <div class="form-input">
             <i class="fa fa-key"></i> <input type="password" required name="pass" placeholder="Your Password" class="form-control">
         </div>
-        <p><a href="#">Forgot Password?</a></p>
+        <p><a href="#">Lupa Password?</a></p>
         <input type="submit" name="btnsimpan" value="Sign In" class="btn">
 
     </form>
