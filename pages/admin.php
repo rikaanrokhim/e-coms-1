@@ -32,7 +32,7 @@ error_reporting(E_ALL);
 		</div>
 	</div>
 
-	<a class="mobile"> Menu </a>
+	<a class="mobile"> MENU </a>
 
 	<div id="container">
 		<div class="sidebar" id="mysidebar">
