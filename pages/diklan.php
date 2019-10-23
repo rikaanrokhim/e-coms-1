@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 ?>
 
 <div id="box">
-	<div class="box-top"> Data Iklan</div>
+	<div class="box-top"> DATA IKLAN</div>
 	<div class="box-panel">
 		<table>
 			<tr>
