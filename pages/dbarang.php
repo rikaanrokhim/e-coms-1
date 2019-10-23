@@ -21,7 +21,7 @@ error_reporting(E_ALL);
                 <th>Penjual</th>
                 <th>Gambar</th>
                 <th>Detail</th>
-                <th colspan="2">Option</th>
+                <th colspan="2">Pilihan</th>
             </tr>
             <?php
                 $j = $pag["no"];
